@@ -1,12 +1,10 @@
 package example
 
-import scala.scalajs.js
-import js.Dynamic.{ global => g }
+import jsgl.util.Logger
+import jsgl.gl.GL
 
 object ScalaJSExample {
   def main(): Unit = {
-    val paragraph = g.document.createElement("p")
-    paragraph.innerHTML = "<strong>It works!</strong>"
-    g.document.getElementById("playground").appendChild(paragraph)
+    Logger.log("Hello from ScalaJS " + WebGLRenderingContext.NONE)
   }
 }
