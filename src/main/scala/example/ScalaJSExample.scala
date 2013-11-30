@@ -10,7 +10,8 @@ object ScalaJSExample {
     val canvas = document.getElementById("surface")
     val context : WebGLRenderingContext = canvas.getContext("webgl").asInstanceOf[WebGLRenderingContext]
 
-    context.clearColor(1.0, 0.0, 0.0, 1.0)
+    context.clearColor(0.0, 1.0, 0.0, 1.0)
     context.clear(WebGLRenderingContext.COLOR_BUFFER_BIT)
+
   }
 }

@@ -99,7 +99,7 @@ trait WebGLContextAttributes extends js.Object {
 }
 
 object WebGLRenderingContext extends js.Object {
-/* ClearBufferMask */
+    /* ClearBufferMask */
     val DEPTH_BUFFER_BIT: js.Number = ???
     val STENCIL_BUFFER_BIT: js.Number = ???
     val COLOR_BUFFER_BIT: js.Number = ???
@@ -114,14 +114,14 @@ object WebGLRenderingContext extends js.Object {
     val TRIANGLE_FAN: js.Number = ???
 
     /* AlphaFunction (not supported in ES20) */
-    /*      NEVER */
-    /*      LESS */
-    /*      EQUAL */
-    /*      LEQUAL */
-    /*      GREATER */
-    /*      NOTEQUAL */
-    /*      GEQUAL */
-    /*      ALWAYS */
+    /* NEVER */
+    /* LESS */
+    /* EQUAL */
+    /* LEQUAL */
+    /* GREATER */
+    /* NOTEQUAL */
+    /* GEQUAL */
+    /* ALWAYS */
 
     /* BlendingFactorDest */
     val ZERO: js.Number = ???
@@ -134,15 +134,15 @@ object WebGLRenderingContext extends js.Object {
     val ONE_MINUS_DST_ALPHA: js.Number = ???
 
     /* BlendingFactorSrc */
-    /*      ZERO */
-    /*      ONE */
+    /* ZERO */
+    /* ONE */
     val DST_COLOR: js.Number = ???
     val ONE_MINUS_DST_COLOR: js.Number = ???
     val SRC_ALPHA_SATURATE: js.Number = ???
-    /*      SRC_ALPHA */
-    /*      ONE_MINUS_SRC_ALPHA */
-    /*      DST_ALPHA */
-    /*      ONE_MINUS_DST_ALPHA */
+    /* SRC_ALPHA */
+    /* ONE_MINUS_SRC_ALPHA */
+    /* DST_ALPHA */
+    /* ONE_MINUS_DST_ALPHA */
 
     /* BlendEquationSeparate */
     val FUNC_ADD: js.Number = ???
@@ -186,14 +186,14 @@ object WebGLRenderingContext extends js.Object {
     val FRONT_AND_BACK: js.Number = ???
 
     /* DepthFunction */
-    /*      NEVER */
-    /*      LESS */
-    /*      EQUAL */
-    /*      LEQUAL */
-    /*      GREATER */
-    /*      NOTEQUAL */
-    /*      GEQUAL */
-    /*      ALWAYS */
+    /* NEVER */
+    /* LESS */
+    /* EQUAL */
+    /* LEQUAL */
+    /* GREATER */
+    /* NOTEQUAL */
+    /* GEQUAL */
+    /* ALWAYS */
 
     /* EnableCap */
     /* TEXTURE_2D */
@@ -246,7 +246,7 @@ object WebGLRenderingContext extends js.Object {
     val VIEWPORT: js.Number = ???
     val SCISSOR_BOX: js.Number = ???
     
-    /*      SCISSOR_TEST */
+    /* SCISSOR_TEST */
     val COLOR_CLEAR_VALUE: js.Number = ???
     val COLOR_WRITEMASK: js.Number = ???
     val UNPACK_ALIGNMENT: js.Number = ???
@@ -262,7 +262,7 @@ object WebGLRenderingContext extends js.Object {
     val STENCIL_BITS: js.Number = ???
     val POLYGON_OFFSET_UNITS: js.Number = ???
     
-    /*      POLYGON_OFFSET_FILL */
+    /* POLYGON_OFFSET_FILL */
     val POLYGON_OFFSET_FACTOR: js.Number = ???
     val TEXTURE_BINDING_2D: js.Number = ???
     val SAMPLE_BUFFERS: js.Number = ???
@@ -271,10 +271,10 @@ object WebGLRenderingContext extends js.Object {
     val SAMPLE_COVERAGE_INVERT: js.Number = ???
 
     /* GetTextureParameter */
-    /*      TEXTURE_MAG_FILTER */
-    /*      TEXTURE_MIN_FILTER */
-    /*      TEXTURE_WRAP_S */
-    /*      TEXTURE_WRAP_T */
+    /* TEXTURE_MAG_FILTER */
+    /* TEXTURE_MIN_FILTER */
+    /* TEXTURE_WRAP_S */
+    /* TEXTURE_WRAP_T */
 
     val COMPRESSED_TEXTURE_FORMATS: js.Number = ???
 
@@ -340,7 +340,7 @@ object WebGLRenderingContext extends js.Object {
     val ALWAYS: js.Number = ???
 
     /* StencilOp */
-    /*      ZERO */
+    /* ZERO */
     val KEEP: js.Number = ???
     val REPLACE: js.Number = ???
     val INCR: js.Number = ???
@@ -359,8 +359,8 @@ object WebGLRenderingContext extends js.Object {
     val LINEAR: js.Number = ???
 
     /* TextureMinFilter */
-    /*      NEAREST */
-    /*      LINEAR */
+    /* NEAREST */
+    /* LINEAR */
     val NEAREST_MIPMAP_NEAREST: js.Number = ???
     val LINEAR_MIPMAP_NEAREST: js.Number = ???
     val NEAREST_MIPMAP_LINEAR: js.Number = ???
