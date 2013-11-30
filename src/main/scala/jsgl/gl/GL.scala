@@ -1,6 +1,7 @@
+package jsgl.gl
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
-import org.w3c.dom.html.HTMLElement
 
 // FIXME: These dont belong here. Move them ASAP
 
@@ -9,6 +10,34 @@ trait Float32Array extends js.Object {
 }
 
 trait Int32Array extends js.Object {
+
+}
+
+trait HTMLElement extends js.Object {
+
+}
+
+trait HTMLVideoElement extends HTMLElement {
+
+}
+
+trait HTMLCanvasElement extends HTMLElement {
+
+}
+
+trait HTMLImageElement extends HTMLElement {
+
+}
+
+trait ArrayBufferView extends js.Object {
+
+}
+
+trait ArrayBuffer extends js.Object {
+
+}
+
+trait ImageData extends js.Object {
 
 }
 
@@ -69,8 +98,8 @@ trait WebGLContextAttributes extends js.Object {
     val preserveDrawingBuffer: js.Boolean = ???
 }
 
-trait WebGLRenderingContext extends js.Object {
-    /* ClearBufferMask */
+object WebGLRenderingContext extends js.Object {
+/* ClearBufferMask */
     val DEPTH_BUFFER_BIT: js.Number = ???
     val STENCIL_BUFFER_BIT: js.Number = ???
     val COLOR_BUFFER_BIT: js.Number = ???
@@ -486,7 +515,9 @@ trait WebGLRenderingContext extends js.Object {
     val CONTEXT_LOST_WEBGL: js.Number = ???
     val UNPACK_COLORSPACE_CONVERSION_WEBGL: js.Number = ???
     val BROWSER_DEFAULT_WEBGL: js.Number = ???
+}
 
+trait WebGLRenderingContext extends js.Object {
     val canvas: HTMLCanvasElement = ???
 
     val drawingBufferWidth: js.Number = ???
