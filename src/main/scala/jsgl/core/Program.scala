@@ -1,6 +1,7 @@
 
 package jsgl.core
-import jsgl.gl.{WebGLShader, WebGLRenderingContext}
+import jsgl.gl.{WebGLUniformLocation, WebGLShader, WebGLRenderingContext}
+import scala.scalajs.js
 
 abstract class Program(gl: WebGLRenderingContext, vertexShaderSource: String, fragmentShaderSource: String) {
 
@@ -12,15 +13,15 @@ abstract class Program(gl: WebGLRenderingContext, vertexShaderSource: String, fr
   gl.attachShader(program, vertexShader)
   gl.attachShader(program, fragmentShader)
 
-  var attributes = new Array[String]()
+  var attributes = new Array[String](0)
 
-  protected def compileShader(source: String, ofType: Number): WebGLShader = {
+  protected def compileShader(source: String, ofType: js.Number): WebGLShader = {
     val shader = gl.createShader(ofType)
 
     gl.shaderSource(shader, source)
     gl.compileShader(shader)
 
-    assert(gl.getShaderParameter(shader, WebGLRenderingContext.COMPILE_STATUS))
+    assert(gl.getShaderParameter(shader, WebGLRenderingContext.COMPILE_STATUS) != 0)
 
     return shader
   }
@@ -29,14 +30,14 @@ abstract class Program(gl: WebGLRenderingContext, vertexShaderSource: String, fr
     if(attributes contains name)
       return
 
-    attributes += name
+    attributes :+ name
 
     gl.bindAttribLocation(program, attributes.indexOf(name), name)
   }
 
   def attributeIndex(name: String) : Integer = attributes.indexOf(name)
 
-  def uniformIndex(name: String) : Integer = gl.getUniformLocation(program, name)
+  def uniformIndex(name: String) : WebGLUniformLocation = gl.getUniformLocation(program, name)
 
   def link() : Unit = {
     gl.linkProgram(program)
