@@ -2,7 +2,7 @@ package example
 
 import scala.scalajs.js
 import jsgl.gl.{WebGLRenderingContext, HTMLCanvasElement}
-import jsgl.core.{NodeProgram, Program}
+import jsgl.core.{DisplayLink, NodeProgram, Program}
 
 object ScalaJSExample {
   def main(): Unit = {
@@ -15,5 +15,7 @@ object ScalaJSExample {
 
     val program = new NodeProgram(context)
     program.link()
+
+    new DisplayLink()
   }
 }

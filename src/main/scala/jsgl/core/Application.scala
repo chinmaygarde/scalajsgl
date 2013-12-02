@@ -1,6 +1,7 @@
 
-
 abstract class Application(var root: Node) {
+
+
 
   protected def heartbeat() = {
     update()
