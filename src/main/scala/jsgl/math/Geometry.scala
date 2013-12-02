@@ -82,8 +82,18 @@ object Matrix4 {
   }
 }
 
+object Point {
+  def make(x: Double, y: Double) = new Point(x, y)
+
+  def zero() = Point.make(0, 0)
+}
+
 class Point(val x: Double, val y: Double) {
   def ==(other: Point) = ((x == other.x) && (y == other.y))
+}
+
+object Size {
+  def make(width: Double, height: Double) = new Size(width, height)
 }
 
 class Size(val width: Double, val height: Double) {
@@ -96,8 +106,18 @@ object Rect {
     new Point(x, y),
     new Size(width, height)
   )
+
+  def zero() = Rect.make(0, 0, 0, 0)
 }
 
 class Rect(val origin: Point, val size: Size) {
   def ==(other: Rect) = ((origin == other.origin) && (size == other.size))
+}
+
+object Color4 {
+
+}
+
+class Color4(val r: Double, val g: Double, val b: Double, val a: Double) {
+
 }
