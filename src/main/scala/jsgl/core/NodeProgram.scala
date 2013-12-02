@@ -40,13 +40,13 @@ class NodeProgram(gl: WebGLRenderingContext) extends Program(gl, NodeProgram.Ver
 
   // FIXME: This does not seem particularly idiomatic
 
-  private var _modelViewProjectionMatrixIndex   : WebGLUniformLocation = null
-  private var _textureSamplerIndex              : WebGLUniformLocation = null
-  private var _textureBoundFlagIndex            : WebGLUniformLocation = null
-  private var _backgroundColorIndex             : WebGLUniformLocation = null
+  private var _modelViewProjectionMatrixIndex   : WebGLUniformLocation = _
+  private var _textureSamplerIndex              : WebGLUniformLocation = _
+  private var _textureBoundFlagIndex            : WebGLUniformLocation = _
+  private var _backgroundColorIndex             : WebGLUniformLocation = _
 
-  private var _positionIndex                    : Integer = null
-  private var _textureCoordinateInputIndex      : Integer = null
+  private var _positionIndex                    : Integer = _
+  private var _textureCoordinateInputIndex      : Integer = _
 
   def modelViewProjectionMatrixIndex = _modelViewProjectionMatrixIndex
   def textureSamplerIndex            = _textureSamplerIndex
