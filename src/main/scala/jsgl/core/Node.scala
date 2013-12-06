@@ -1,4 +1,8 @@
 
+package jsgl.core
+
+import jsgl.math.{Rect, Point, Color4}
+
 class Node() {
   private var _bounds : Rect = Rect.zero()
   def bounds() = _bounds

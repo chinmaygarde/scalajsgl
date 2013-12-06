@@ -1,4 +1,6 @@
 
+package jsgl.math
+
 class Matrix4(val elements : Array[Double]) {
   def *(other: Matrix4) = new Matrix4(Array(
     elements(0) * other.elements(0) + elements(4) * other.elements(1) + elements(8) * other.elements(2) + elements(12) * other.elements(3),
